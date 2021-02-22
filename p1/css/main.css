@@ -1,33 +1,77 @@
 body {
   background-color: #75aadb;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 h1 {
-  font-family: helvetica;
+  font-family: avenir;
   font-size: 60px;
   color: white;
   text-align: center;
+  margin-top: 200px;
+  width: 900px;
+  position: relative;
+  margin-top: 250px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 h3 {
-  font-family: helvetica;
+  font-family: avenir;
   font-size: 30px;
   color: white;
   text-align: center;
+  position: relative;
 }
 
-a {
+h4 {
+    font-family: avenir;
+    font-style: bold;
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.circle {
+  background: #f6b40e;
+  clip-path: circle(50%);
+  height: 2em;
+  width: 2em;
+  align: center;
+  position: relative;
+  top: 28%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#sname a {
   color: white;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 500ms;
 }
 
-a:hover {
+#sname a:hover {
   color: #f6b40e;
+  transform: scale(1.1);
+  font-size: 1.3em;
+  font-size-adjust: 25px;
 }
 
 p {
-  font-family: helvetica;
-  font-size: 24px;
+  font-family: georgia;
+  font-size: 25px;
   color: white;
   text-align: center;
+  line-height: 1.4;
+  width: 530px;
+  position: absolute;
+  margin-top: 250px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
