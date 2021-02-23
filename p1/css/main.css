@@ -48,14 +48,14 @@ h4 {
   transform: translate(-50%, -50%)
 }
 
-#sname a {
+.hover a {
   color: white;
   font-weight: bold;
   font-size: 1em;
   transition: all 500ms;
 }
 
-#sname a:hover {
+.hover a:hover {
   color: #f6b40e;
   transform: scale(1.1);
   font-size: 1.3em;
