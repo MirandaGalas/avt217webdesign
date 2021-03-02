@@ -1,0 +1,45 @@
+body {
+  background-color: white;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: avenir;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #01A2A6;
+  text-align: left;
+  width: 900px;
+  position: relative;
+  margin-top: 100px;
+  left: 10%;
+}
+
+h3 {
+  font-family: avenir;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #01A2A6;
+  text-align: left;
+  position: relative;
+  left: 10%;
+}
+
+ul {
+  font-family: avenir;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #58595B;
+  text-align: left;
+  position: relative;
+  left: 10%;
+}
+
+a {
+  color: #58595B;
+}
+
+a:hover {
+  color: #3CC2D3;
+}
