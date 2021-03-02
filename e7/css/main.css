@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  color: #666666;
   margin-top: 75px;
   margin-left: 10%;
   margin-right: 15%;
@@ -8,22 +9,22 @@ body {
 
 h1 {
   font-family: DM Serif Text;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   color: #0C0944;
   line-height: 1.2;
-  width: 500px;
+  width: 550px;
 }
 
 .intro p {
-  font-size: 20px;
-  line-height: 1.5;
-  padding-top: 20px;
+  font-size: 25px;
+  line-height: 1.4;
+  padding-top: 18px;
 }
 
 h5 {
   font-family: roboto;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   color: #CD212D;
   padding-bottom: 60px;
@@ -40,12 +41,11 @@ p {
   line-height: 1.6;
   width: 590px;
   padding: 2px;
-  color: #666666;
 }
 
 h2 {
   font-family: DM Serif Text;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   color: #0C0944;
   line-height: 1.2;
