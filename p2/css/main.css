@@ -1,0 +1,42 @@
+body {
+  background-color: #2D2A2B;
+  margin-top: 100px;
+  color: #F4F4F5;
+  margin-left: 100px;
+}
+
+h1 {
+  font-family: open sans;
+  font-size: 40px;
+  color: #ED1C24;
+  line-height: 20px;
+}
+
+h2 {
+  font-family: open sans;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+ul {
+  font-family: Lato;
+  font-size: 18px;
+  color: #F4F4F5;
+}
+
+a {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ED1C24;
+}
+
+a:visited {
+  color: #F4F4F5;
+}
+
+a:hover {
+  color: #ED1C24;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
