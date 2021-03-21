@@ -1,19 +1,38 @@
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   margin-top: 100px;
 }
 
+header {
+  width: 75vw;
+  margin: 25px auto;
+  background-color: #01A2A6;
+}
+
+main{
+  width: 75vw;
+  margin: 25px auto;
+  background-color: #eeeeee;
+}
+
+.col {
+  width: 50%;
+  float: left;
+  display: flow-root;
+}
+
 h1 {
   font-family: avenir;
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #01A2A6;
-  text-align: left;
-  width: 900px;
+  color: white;
+  text-align: center;
   position: relative;
   margin-top: 100px;
-  left: 10%;
 }
 
 h3 {
@@ -42,4 +61,11 @@ a {
 
 a:hover {
   color: #3CC2D3;
+}
+
+@media screen and (max-width: 900px) {
+  .col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
