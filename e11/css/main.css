@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: darksalmon;
+}
+main {
+  position: relative;
+  margin: auto 0 0;
+}
+.case {
+  width: 400px;
+  height: 400px;
+  background-color: ivory;
+  border: 15px solid silver;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  box-shadow: 0 10px 20px #333;
+}
+.handscrew {
+  width: 30px;
+  height: 30px;
+  background-color: darkgrey;
+  border-radius: 50%;
+  position: absolute;
+  top: 385px;
+  left: 385px;
+  z-index: 20;
+  box-shadow: 0 3px 5px #777;
+}
+.hand {
+  width: 15px;
+  background-color: white;
+  border: 3px solid darkgrey;
+  border-top: 15px solid darkgrey;
+  box-shadow: 0 0 5px #D3D3D3;
+}
+.minute {
+  width: 15px;
+  height: 150px;
+  position: absolute;
+  top: 250px;
+  left: 393px;
+  z-index: 10;
+}
+.hour {
+  height: 90px;
+  position: absolute;
+  top: 380px;
+  left: 435px;
+  transform: rotate(120deg);
+  z-index: 5;
+}
+.handsecond {
+  width: 4px;
+  height: 200px;
+  background-color: darkgrey;
+  z-index: 15;
+  position: absolute;
+  top: 255px;
+  left: 424px;
+  transform: rotate(30deg);
+  box-shadow: 0 0 3px #D3D3D3;
+}
+.marker {
+  width: 5px;
+  height: 65px;
+  background-color: silver;
+  z-index: 2;
+}
+.twelve {
+  position: absolute;
+  top: 201px;
+  left: 398px;
+}
+.one {
+  position: absolute;
+  top: 223px;
+  left: 481px;
+  transform: rotate(30deg);
+}
+.two {
+  position: absolute;
+  top: 284px;
+  left: 542px;
+  transform: rotate(60deg);
+}
+.three {
+  position: absolute;
+  top: 368px;
+  left: 564px;
+  transform: rotate(90deg);
+}
+.four {
+  position: absolute;
+  top: 450px;
+  left: 541px;
+  transform: rotate(120deg);
+}
+.five {
+  position: absolute;
+  top: 511px;
+  left: 482px;
+  transform: rotate(150deg);
+}
+.six {
+  position: absolute;
+  top: 534px;
+  left: 398px;
+  transform: rotate(180deg);
+}
+.seven {
+  position: absolute;
+  top: 511px;
+  left: 312px;
+  transform: rotate(210deg);
+}
+.eight {
+  position: absolute;
+  top: 450px;
+  left: 254px;
+  transform: rotate(240deg);
+}
+.nine {
+  position: absolute;
+  top: 368px;
+  left: 231px;
+  transform: rotate(270deg);
+}
+.ten {
+  position: absolute;
+  top: 284px;
+  left: 254px;
+  transform: rotate(300deg);
+}
+.eleven {
+  position: absolute;
+  top: 223px;
+  left: 312px;
+  transform: rotate(330deg);
+}
+.crown {
+  width: 30px;
+  height: 45px;
+  background-color: silver;
+  z-index: -5;
+  position: absolute;
+  top: 379px;
+  left: 587px;
+  border-radius: 20%;
+  box-shadow: 0 8px 15px #333;
+}
+.strap {
+  width: 200px;
+  height: 900px;
+  background-color: darkturquoise;
+  z-index: -5;
+  box-shadow: 0 5px 30px #555;
+  position: absolute;
+  top: -30px;
+  left: 299px;
+}
+.seam {
+  width: 178px;
+  height: 900px;
+  position: absolute;
+  top: -30px;
+  left: 310px;
+  z-index: -2;
+  border: dashed 3px ivory;
+  border-style: dashed;
+}
