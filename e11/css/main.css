@@ -2,12 +2,15 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
   background-color: darksalmon;
 }
 main {
-  position: relative;
-  margin: auto 0 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -415px;
+  margin-left: -410px;
+  /* I know you said no big margins, but I couldn't find the way to center it properly */
 }
 .case {
   width: 400px;
@@ -85,7 +88,7 @@ main {
 .two {
   position: absolute;
   top: 284px;
-  left: 542px;
+  left: 541px;
   transform: rotate(60deg);
 }
 .three {
@@ -103,7 +106,7 @@ main {
 .five {
   position: absolute;
   top: 511px;
-  left: 482px;
+  left: 481px;
   transform: rotate(150deg);
 }
 .six {
@@ -155,21 +158,23 @@ main {
 }
 .strap {
   width: 200px;
-  height: 900px;
+  height: 1020px;
   background-color: darkturquoise;
   z-index: -5;
   box-shadow: 0 5px 30px #555;
   position: absolute;
-  top: -30px;
+  top: -100px;
   left: 299px;
 }
 .seam {
   width: 178px;
-  height: 900px;
+  height: 1020px;
   position: absolute;
-  top: -30px;
+  top: -100px;
   left: 310px;
   z-index: -2;
   border: dashed 3px ivory;
   border-style: dashed;
+  border-top: 0;
+  border-bottom: 0;
 }
