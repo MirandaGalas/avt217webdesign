@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: steelblue;
+}
+main {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -270px;
+  /* I know you said no big margins, but I couldn't find the way to center it properly */
+}
+.door1 {
+  width: 300px;
+  height: 620px;
+  background-color: chocolate;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.paneltop {
+  width: 80px;
+  height: 60px;
+  background-color: chocolate;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid #9D5524 12px;
+  border-left: solid #D67838 12px;
+  border-right: solid #B46229 12px;
+  border-bottom: solid #E28343 12px;
+}
+.right {
+  left: 155px;
+}
+.panelmiddle {
+  width: 80px;
+  height: 170px;
+  background-color: chocolate;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid #9D5524 12px;
+  border-left: solid #D67838 12px;
+  border-right: solid #B46229 12px;
+  border-bottom: solid #E28343 12px;
+}
+.right {
+  left: 155px;
+}
+.panelbottom {
+  width: 80px;
+  height: 215px;
+  background-color: chocolate;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid #9D5524 12px;
+  border-left: solid #D67838 12px;
+  border-right: solid #B46229 12px;
+  border-bottom: solid #E28343 12px;
+}
+.right {
+  left: 155px;
+}
+.lockset {
+  position: absolute;
+  top: 322px;
+  left: 247px;
+}
+.knob {
+  width: 17px;
+  height: 17px;
+  background-color: gray;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: -4px 4px 5px #222;
+}
+.lock {
+  width: 23px;
+  height: 70px;
+  background-color: dimgray;
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  border-radius: 30%;
+}
+.step {
+  width: 360px;
+  height: 68px;
+  background-color: darkgray;
+  position: absolute;
+  top: 640px;
+  left: -9px;
+}
+/* .molding {
+  width: 300px;
+  height: 40px;
+  background-color: floralwhite;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: -5;
+} */
+h1 {
+  font-family: prata;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  position: absolute;
+  top: 450px;
+  left: 450px;
+}
+p {
+  font-family: nunito;
+  font-size: 16px;
+  color: white;
+  width: 230px;
+  position: absolute;
+  top: 490px;
+  left: 450px;
+}

@@ -6,10 +6,8 @@ body {
 }
 main {
   position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-top: -415px;
-  margin-left: -410px;
+  left: 22%;
+  top: 6%;
   /* I know you said no big margins, but I couldn't find the way to center it properly */
 }
 .case {
