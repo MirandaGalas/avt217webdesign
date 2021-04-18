@@ -2,71 +2,23 @@
   box-sizing: border-box;
 }
 body {
-  background-color: steelblue;
+  background-color: lightslategrey;
 }
 main {
   position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-left: -300px;
-  margin-top: -270px;
-  /* I know you said no big margins, but I couldn't find the way to center it properly */
+  left: calc(50% - 300px);
+  top: calc(50% - 270px);
 }
-.door1 {
-  width: 300px;
-  height: 620px;
-  background-color: chocolate;
+.hide {
+  display: none;
+}
+.step {
+  width: 360px;
+  height: 68px;
+  background-color: darkgray;
   position: absolute;
-  top: 20px;
-  left: 20px;
-  border-top: solid floralwhite 12px;
-  border-left: solid floralwhite 12px;
-  border-right: solid floralwhite 12px;
-}
-.paneltop {
-  width: 80px;
-  height: 60px;
-  background-color: chocolate;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  border-top: solid #9D5524 12px;
-  border-left: solid #D67838 12px;
-  border-right: solid #B46229 12px;
-  border-bottom: solid #E28343 12px;
-}
-.right {
-  left: 155px;
-}
-.panelmiddle {
-  width: 80px;
-  height: 170px;
-  background-color: chocolate;
-  position: absolute;
-  top: 140px;
-  left: 40px;
-  border-top: solid #9D5524 12px;
-  border-left: solid #D67838 12px;
-  border-right: solid #B46229 12px;
-  border-bottom: solid #E28343 12px;
-}
-.right {
-  left: 155px;
-}
-.panelbottom {
-  width: 80px;
-  height: 215px;
-  background-color: chocolate;
-  position: absolute;
-  top: 350px;
-  left: 40px;
-  border-top: solid #9D5524 12px;
-  border-left: solid #D67838 12px;
-  border-right: solid #B46229 12px;
-  border-bottom: solid #E28343 12px;
-}
-.right {
-  left: 155px;
+  top: 640px;
+  left: -9px;
 }
 .lockset {
   position: absolute;
@@ -93,38 +45,501 @@ main {
   left: 0px;
   border-radius: 30%;
 }
-.step {
-  width: 360px;
-  height: 68px;
-  background-color: darkgray;
+/* TEXT */
+.text {
+  width: 230px;
   position: absolute;
-  top: 640px;
-  left: -9px;
+  top: 450px;
+  left: 410px;
 }
-/* .molding {
-  width: 300px;
-  height: 40px;
-  background-color: floralwhite;
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  z-index: -5;
-} */
 h1 {
   font-family: prata;
   font-size: 20px;
   letter-spacing: 1px;
   color: white;
-  position: absolute;
-  top: 450px;
-  left: 450px;
 }
 p {
   font-family: nunito;
   font-size: 16px;
   color: white;
-  width: 230px;
+}
+/* ORANGE */
+.orange {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(30, 85%, 50%);
   position: absolute;
-  top: 490px;
-  left: 450px;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.orange .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(30, 85%, 40%) 12px;
+  border-right: solid hsl(30, 85%, 45%) 12px;
+  border-left: solid hsl(30, 85%, 55%) 12px;
+  border-bottom: solid hsl(30, 85%, 60%) 12px;
+}
+.orange .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(30, 85%, 40%) 12px;
+  border-right: solid hsl(30, 85%, 45%) 12px;
+  border-left: solid hsl(30, 85%, 55%) 12px;
+  border-bottom: solid hsl(30, 85%, 60%) 12px;
+}
+.orange .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(30, 85%, 40%) 12px;
+  border-right: solid hsl(30, 85%, 45%) 12px;
+  border-left: solid hsl(30, 85%, 55%) 12px;
+  border-bottom: solid hsl(30, 85%, 60%) 12px;
+}
+.orange .right {
+  left: 155px;
+}
+/* BLUE */
+.blue {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(205, 85%, 50%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.blue .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(205, 85%, 40%) 12px;
+  border-right: solid hsl(205, 85%, 45%) 12px;
+  border-left: solid hsl(205, 85%, 55%) 12px;
+  border-bottom: solid hsl(205, 85%, 60%) 12px;
+}
+.blue .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(205, 85%, 40%) 12px;
+  border-right: solid hsl(205, 85%, 45%) 12px;
+  border-left: solid hsl(205, 85%, 55%) 12px;
+  border-bottom: solid hsl(205, 85%, 60%) 12px;
+}
+.blue .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(205, 85%, 40%) 12px;
+  border-right: solid hsl(205, 85%, 45%) 12px;
+  border-left: solid hsl(205, 85%, 55%) 12px;
+  border-bottom: solid hsl(205, 85%, 60%) 12px;
+}
+.blue .right {
+  left: 155px;
+}
+/* WHITE */
+.white {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(50, 0%, 90%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid #333 12px;
+  border-left: solid #333 12px;
+  border-right: solid #333 12px;
+}
+.white .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(50, 0%, 80%) 12px;
+  border-right: solid hsl(50, 0%, 85%) 12px;
+  border-left: solid hsl(50, 0%, 95%) 12px;
+  border-bottom: solid hsl(50, 0%, 100%) 12px;
+}
+.white .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(50, 0%, 80%) 12px;
+  border-right: solid hsl(50, 0%, 85%) 12px;
+  border-left: solid hsl(50, 0%, 95%) 12px;
+  border-bottom: solid hsl(50, 0%, 100%) 12px;
+}
+.white .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(50, 0%, 80%) 12px;
+  border-right: solid hsl(50, 0%, 85%) 12px;
+  border-left: solid hsl(50, 0%, 95%) 12px;
+  border-bottom: solid hsl(50, 0%, 100%) 12px;
+}
+.white .right {
+  left: 155px;
+}
+/* PURPLE */
+.purple {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(270, 60%, 50%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid #333 12px;
+  border-left: solid #333 12px;
+  border-right: solid #333 12px;
+}
+.purple .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(270, 60%, 40%) 12px;
+  border-right: solid hsl(270, 60%, 45%) 12px;
+  border-left: solid hsl(270, 60%, 55%) 12px;
+  border-bottom: solid hsl(270, 60%, 60%) 12px;
+}
+.purple .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(270, 60%, 40%) 12px;
+  border-right: solid hsl(270, 60%, 45%) 12px;
+  border-left: solid hsl(270, 60%, 55%) 12px;
+  border-bottom: solid hsl(270, 60%, 60%) 12px;
+}
+.purple .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(270, 60%, 40%) 12px;
+  border-right: solid hsl(270, 60%, 45%) 12px;
+  border-left: solid hsl(270, 60%, 55%) 12px;
+  border-bottom: solid hsl(270, 60%, 60%) 12px;
+}
+.purple .right {
+  left: 155px;
+}
+/* YELLOW */
+.yellow {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(45, 85%, 50%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.yellow .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(45, 85%, 40%) 12px;
+  border-right: solid hsl(45, 85%, 45%) 12px;
+  border-left: solid hsl(45, 85%, 55%) 12px;
+  border-bottom: solid hsl(45, 85%, 60%) 12px;
+}
+.yellow .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(45, 85%, 40%) 12px;
+  border-right: solid hsl(45, 85%, 45%) 12px;
+  border-left: solid hsl(45, 85%, 55%) 12px;
+  border-bottom: solid hsl(45, 85%, 60%) 12px;
+}
+.yellow .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(45, 85%, 40%) 12px;
+  border-right: solid hsl(45, 85%, 45%) 12px;
+  border-left: solid hsl(45, 85%, 55%) 12px;
+  border-bottom: solid hsl(45, 85%, 60%) 12px;
+}
+.yellow .right {
+  left: 155px;
+}
+/* BROWN */
+.brown {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(30, 100%, 20%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid #333 12px;
+  border-left: solid #333 12px;
+  border-right: solid #333 12px;
+}
+.brown .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(30, 100%, 10%) 12px;
+  border-right: solid hsl(30, 100%, 15%) 12px;
+  border-left: solid hsl(30, 100%, 25%) 12px;
+  border-bottom: solid hsl(30, 100%, 30%) 12px;
+}
+.brown .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(30, 100%, 10%) 12px;
+  border-right: solid hsl(30, 100%, 15%) 12px;
+  border-left: solid hsl(30, 100%, 25%) 12px;
+  border-bottom: solid hsl(30, 100%, 30%) 12px;
+}
+.brown .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(30, 100%, 10%) 12px;
+  border-right: solid hsl(30, 100%, 15%) 12px;
+  border-left: solid hsl(30, 100%, 25%) 12px;
+  border-bottom: solid hsl(30, 100%, 30%) 12px;
+}
+.brown .right {
+  left: 155px;
+}
+/* PINK */
+.pink {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(325, 80%, 75%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.pink .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(325, 80%, 65%) 12px;
+  border-right: solid hsl(325, 80%, 70%) 12px;
+  border-left: solid hsl(325, 80%, 80%) 12px;
+  border-bottom: solid hsl(325, 80%, 85%) 12px;
+}
+.pink .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(325, 80%, 65%) 12px;
+  border-right: solid hsl(325, 80%, 70%) 12px;
+  border-left: solid hsl(325, 80%, 80%) 12px;
+  border-bottom: solid hsl(325, 80%, 85%) 12px;
+}
+.pink .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(325, 80%, 65%) 12px;
+  border-right: solid hsl(325, 80%, 70%) 12px;
+  border-left: solid hsl(325, 80%, 80%) 12px;
+  border-bottom: solid hsl(325, 80%, 85%) 12px;
+}
+.pink .right {
+  left: 155px;
+}
+/* GREEN */
+.green {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(145, 65%, 20%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.green .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(145, 65%, 10%) 12px;
+  border-right: solid hsl(145, 65%, 15%) 12px;
+  border-left: solid hsl(145, 65%, 25%) 12px;
+  border-bottom: solid hsl(145, 65%, 30%) 12px;
+}
+.green .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(145, 65%, 10%) 12px;
+  border-right: solid hsl(145, 65%, 15%) 12px;
+  border-left: solid hsl(145, 65%, 25%) 12px;
+  border-bottom: solid hsl(145, 65%, 30%) 12px;
+}
+.green .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(145, 65%, 10%) 12px;
+  border-right: solid hsl(145, 65%, 15%) 12px;
+  border-left: solid hsl(145, 65%, 25%) 12px;
+  border-bottom: solid hsl(145, 65%, 30%) 12px;
+}
+.green .right {
+  left: 155px;
+}
+/* RED */
+.red {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(5, 85%, 50%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid #333 12px;
+  border-left: solid #333 12px;
+  border-right: solid #333 12px;
+}
+.red .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(5, 85%, 40%) 12px;
+  border-right: solid hsl(5, 85%, 45%) 12px;
+  border-left: solid hsl(5, 85%, 55%) 12px;
+  border-bottom: solid hsl(5, 85%, 60%) 12px;
+}
+.red .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(5, 85%, 40%) 12px;
+  border-right: solid hsl(5, 85%, 45%) 12px;
+  border-left: solid hsl(5, 85%, 55%) 12px;
+  border-bottom: solid hsl(5, 85%, 60%) 12px;
+}
+.red .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(5, 85%, 40%) 12px;
+  border-right: solid hsl(5, 85%, 45%) 12px;
+  border-left: solid hsl(5, 85%, 55%) 12px;
+  border-bottom: solid hsl(5, 85%, 60%) 12px;
+}
+.red .right {
+  left: 155px;
+}
+/* BLACK */
+.black {
+  width: 300px;
+  height: 620px;
+  background-color: hsl(35, 0%, 10%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
+}
+.black .paneltop {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-top: solid hsl(35, 0%, 0%) 12px;
+  border-right: solid hsl(35, 0%, 5%) 12px;
+  border-left: solid hsl(35, 0%, 15%) 12px;
+  border-bottom: solid hsl(35, 0%, 20%) 12px;
+}
+.black .panelmiddle {
+  width: 80px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-top: solid hsl(35, 0%, 0%) 12px;
+  border-right: solid hsl(35, 0%, 5%) 12px;
+  border-left: solid hsl(35, 0%, 15%) 12px;
+  border-bottom: solid hsl(35, 0%, 20%) 12px;
+}
+.black .panelbottom {
+  width: 80px;
+  height: 215px;
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  border-top: solid hsl(35, 0%, 0%) 12px;
+  border-right: solid hsl(35, 0%, 5%) 12px;
+  border-left: solid hsl(35, 0%, 15%) 12px;
+  border-bottom: solid hsl(35, 0%, 20%) 12px;
+}
+.black .right {
+  left: 155px;
 }
