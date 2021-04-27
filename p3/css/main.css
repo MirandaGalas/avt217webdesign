@@ -2,7 +2,36 @@
   box-sizing: border-box;
 }
 body {
+}
+.orange-bg {
+  background-color: steelblue;
+}
+.blue-bg {
+  background-color: palevioletred;
+}
+.white-bg {
   background-color: lightslategrey;
+}
+.purple-bg {
+  background-color: lightseagreen;
+}
+.yellow-bg {
+  background-color: darkslateblue;
+}
+.brown-bg {
+  background-color: peru;
+}
+.pink-bg {
+  background-color: cornflowerblue;
+}
+.green-bg {
+  background-color: palevioletred;
+}
+.red-bg {
+  background-color: dimgrey;
+}
+.black-bg {
+  background-color: sandybrown;
 }
 main {
   position: fixed;
@@ -115,7 +144,7 @@ p {
 .blue {
   width: 300px;
   height: 620px;
-  background-color: hsl(205, 85%, 50%);
+  background-color: hsl(205, 65%, 50%);
   position: absolute;
   top: 20px;
   left: 20px;
@@ -129,10 +158,10 @@ p {
   position: absolute;
   top: 40px;
   left: 40px;
-  border-top: solid hsl(205, 85%, 40%) 12px;
-  border-right: solid hsl(205, 85%, 45%) 12px;
-  border-left: solid hsl(205, 85%, 55%) 12px;
-  border-bottom: solid hsl(205, 85%, 60%) 12px;
+  border-top: solid hsl(205, 65%, 40%) 12px;
+  border-right: solid hsl(205, 65%, 45%) 12px;
+  border-left: solid hsl(205, 65%, 55%) 12px;
+  border-bottom: solid hsl(205, 65%, 60%) 12px;
 }
 .blue .panelmiddle {
   width: 80px;
@@ -140,10 +169,10 @@ p {
   position: absolute;
   top: 140px;
   left: 40px;
-  border-top: solid hsl(205, 85%, 40%) 12px;
-  border-right: solid hsl(205, 85%, 45%) 12px;
-  border-left: solid hsl(205, 85%, 55%) 12px;
-  border-bottom: solid hsl(205, 85%, 60%) 12px;
+  border-top: solid hsl(205, 65%, 40%) 12px;
+  border-right: solid hsl(205, 65%, 45%) 12px;
+  border-left: solid hsl(205, 65%, 55%) 12px;
+  border-bottom: solid hsl(205, 65%, 60%) 12px;
 }
 .blue .panelbottom {
   width: 80px;
@@ -151,10 +180,10 @@ p {
   position: absolute;
   top: 350px;
   left: 40px;
-  border-top: solid hsl(205, 85%, 40%) 12px;
-  border-right: solid hsl(205, 85%, 45%) 12px;
-  border-left: solid hsl(205, 85%, 55%) 12px;
-  border-bottom: solid hsl(205, 85%, 60%) 12px;
+  border-top: solid hsl(205, 65%, 40%) 12px;
+  border-right: solid hsl(205, 65%, 45%) 12px;
+  border-left: solid hsl(205, 65%, 55%) 12px;
+  border-bottom: solid hsl(205, 65%, 60%) 12px;
 }
 .blue .right {
   left: 155px;
@@ -211,13 +240,13 @@ p {
 .purple {
   width: 300px;
   height: 620px;
-  background-color: hsl(270, 60%, 50%);
+  background-color: hsl(260, 50%, 50%);
   position: absolute;
   top: 20px;
   left: 20px;
-  border-top: solid #333 12px;
-  border-left: solid #333 12px;
-  border-right: solid #333 12px;
+  border-top: solid floralwhite 12px;
+  border-left: solid floralwhite 12px;
+  border-right: solid floralwhite 12px;
 }
 .purple .paneltop {
   width: 80px;
@@ -225,10 +254,10 @@ p {
   position: absolute;
   top: 40px;
   left: 40px;
-  border-top: solid hsl(270, 60%, 40%) 12px;
-  border-right: solid hsl(270, 60%, 45%) 12px;
-  border-left: solid hsl(270, 60%, 55%) 12px;
-  border-bottom: solid hsl(270, 60%, 60%) 12px;
+  border-top: solid hsl(260, 50%, 40%) 12px;
+  border-right: solid hsl(260, 50%, 45%) 12px;
+  border-left: solid hsl(260, 50%, 55%) 12px;
+  border-bottom: solid hsl(260, 50%, 60%) 12px;
 }
 .purple .panelmiddle {
   width: 80px;
@@ -236,10 +265,10 @@ p {
   position: absolute;
   top: 140px;
   left: 40px;
-  border-top: solid hsl(270, 60%, 40%) 12px;
-  border-right: solid hsl(270, 60%, 45%) 12px;
-  border-left: solid hsl(270, 60%, 55%) 12px;
-  border-bottom: solid hsl(270, 60%, 60%) 12px;
+  border-top: solid hsl(260, 50%, 40%) 12px;
+  border-right: solid hsl(260, 50%, 45%) 12px;
+  border-left: solid hsl(260, 50%, 55%) 12px;
+  border-bottom: solid hsl(260, 50%, 60%) 12px;
 }
 .purple .panelbottom {
   width: 80px;
@@ -247,10 +276,10 @@ p {
   position: absolute;
   top: 350px;
   left: 40px;
-  border-top: solid hsl(270, 60%, 40%) 12px;
-  border-right: solid hsl(270, 60%, 45%) 12px;
-  border-left: solid hsl(270, 60%, 55%) 12px;
-  border-bottom: solid hsl(270, 60%, 60%) 12px;
+  border-top: solid hsl(260, 50%, 40%) 12px;
+  border-right: solid hsl(260, 50%, 45%) 12px;
+  border-left: solid hsl(260, 50%, 55%) 12px;
+  border-bottom: solid hsl(260, 50%, 60%) 12px;
 }
 .purple .right {
   left: 155px;
