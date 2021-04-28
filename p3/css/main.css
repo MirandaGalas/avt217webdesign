@@ -572,3 +572,11 @@ p {
 .black .right {
   left: 155px;
 }
+@media screen and (max-width: 800px) {
+  .text {
+    width: 170px;
+    position: absolute;
+    top: 400px;
+    left: 370px;
+  }
+}
